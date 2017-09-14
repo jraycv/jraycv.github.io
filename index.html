@@ -9,17 +9,14 @@
 
 </head>
 
-<!-- include A-Frame obviously -->
 <script src="aframe.min.js"></script>
-<!-- include ar.js for A-Frame -->
 <script src="aframe-ar.js"></script>
+
 <body style='margin : 0px; overflow: hidden;'>
-  <a-scene embedded arjs>
+  <a-scene embedded arjs='trackingMethod: best;'>
 
 	<a-image src="mario.png"></a-image>
-
-    <!--<a-marker-camera type="pattern" patternUrl="pattern-marker.patt"></a-marker-camera>-->
-	    
+    <a-marker-camera type="pattern" patternUrl="pattern-marker.patt"></a-marker-camera>   
     <a-marker type="pattern" patternUrl="pattern-marker.patt"></a-marker>
 	    
   </a-scene>
