@@ -1,0 +1,6 @@
+User-Agent: *
+Disallow: 
+Disallow: /send.php
+Disallow: /download.php
+Disallow: /CV-Digital.pdf
+Disallow: /CV-Print.pdf

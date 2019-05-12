@@ -1,12 +1,355 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+	
 <meta charset="UTF-8">
-<title>Title of the document</title>
+
+<title>JRAYCV - Interactive Creative Designer</title>
+
+<meta name="Description" content="Justin Raymond Cruz Ventura (JRAYCV) is a Filipino Interactive Creative Designer base in Amsterdam, NL a graduate of Multimedia Arts">
+<meta content="telephone=no" name="format-detection">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="JRAYCV">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+<meta property="og:title" content="JRAYCV">
+<meta property="og:type" content="about">
+<meta property="og:url" content="http://www.jraycv.com">
+<meta property="og:image" content="http://www.jraycv.com/assets/img/jraycvLogo.png">
+<meta property="og:description" content="A Filipino Interactive Creative Designer base in Amsterdam, NL a graduate of Multimedia Arts" />
+
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@jraycv">
+<meta name="twitter:title" content="JRAYCV">
+<meta name="twitter:description" content="A Filipino Interactive Creative Designer base in Amsterdam, NL a graduate of Multimedia Arts">
+
+
+<link rel=”publisher” href=”https://plus.google.com/u/0/114861351942417940138/”>
+
+<link rel="canonical" href="http://jraycv.com/">
+
+<link rel="alternate" hreflang="x-default" href="https://jraycv.com/">
+
+<link rel="stylesheet" type="text/css" href="assets/css/print.css" media="print">
+
+<!-- For old IEs -->
+<link rel="shortcut icon" href="assets/favicons/favicon.ico" />
+
+<!-- For new browsers - multisize ico  -->
+<link rel="icon" type="image/x-icon" sizes="16x16 32x32" href="assets/favicons/favicon.ico">
+
+<!-- For iPad with high-resolution Retina display running iOS ≥ 7: -->
+<link rel="apple-touch-icon" sizes="152x152" href="assets/favicons/favicon-152-precomposed.png">
+
+<!-- For iPad with high-resolution Retina display running iOS ≤ 6: -->
+<link rel="apple-touch-icon" sizes="144x144" href="assets/favicons/favicon-144-precomposed.png">
+
+<!-- For iPhone with high-resolution Retina display running iOS ≥ 7: -->
+<link rel="apple-touch-icon" sizes="120x120" href="assets/favicons/favicon-120-precomposed.png">
+
+<!-- For iPhone with high-resolution Retina display running iOS ≤ 6: -->
+<link rel="apple-touch-icon" sizes="114x114" href="assets/favicons/favicon-114-precomposed.png">
+
+<!-- For iPhone 6+ -->
+<link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/favicon-180-precomposed.png">
+
+<!-- For first- and second-generation iPad: -->
+<link rel="apple-touch-icon" sizes="72x72" href="assets/favicons/favicon-72-precomposed.png">
+
+<!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+<link rel="apple-touch-icon" href="assets/favicons/favicon-57.png">
+
+<!-- For Old Chrome -->
+<link rel="icon" href="assets/favicons/favicon-32.png" sizes="32x32">
+
+<!-- For IE10 Metro -->
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="assets/favicons/favicon-144.png">
+<meta name="theme-color" content="#ffffff">
+
+<!-- Chrome for Android -->
+<link rel="manifest" href="manifest.json">
+<link rel="icon" sizes="192x192" href="assets/favicons/favicon-192.png">
+
+<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+
+<link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet" type="text/css">
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131743972-1"></script>
+
+<!-- Firebase App is always required and must be first -->
+<script src="https://www.gstatic.com/firebasejs/5.7.0/firebase-app.js"></script>
+
+<!-- Add additional services that you want to use -->
+<script src="https://www.gstatic.com/firebasejs/5.7.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.7.0/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.7.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.7.0/firebase-messaging.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.7.0/firebase-functions.js"></script>
+
+
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCLChZuetfTM6BaBr2LDD3qn4G-EU_MMOs",
+    authDomain: "jraycv-site.firebaseapp.com",
+    databaseURL: "https://jraycv-site.firebaseio.com",
+    projectId: "jraycv-site",
+    storageBucket: "jraycv-site.appspot.com",
+    messagingSenderId: "618230385107"
+  };
+  firebase.initializeApp(config);
+  
+  //<!-- Global site tag (gtag.js) - Google Analytics -->
+  
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	
+	gtag('config', 'UA-131743972-1'); 
+  
+</script>
+
+
 </head>
 
 <body>
-	Welcome 
+
+	<div id="container">
+		
+		<header>
+			
+			<div class="wrap">
+				
+				<div id="logo"></div>
+				
+				<div id="menu"></div>
+							
+				<nav>
+					<a href="#embark" class="active">Embark</a>
+					<a href="#avatar">Avatar</a>
+					<a href="#ventures">Ventures</a>
+					<a href="#encounter">Encounter</a>
+					<a href="#">Scavenge</a>
+				</nav>
+			
+			</div>
+
+			
+		</header>
+		
+		<section id="embark">
+			
+			<div class="wrap">
+				
+				<div class="row" id="barrier">
+					
+						<div class="col-2" id="static">
+						
+							<div class="content align-center">
+								
+								<div id="orb" class="animated slideInUp">
+								
+									<div id="hero">
+										
+										<div id="ship"></div>
+										
+										<div id="booster"></div>
+										
+										<ul class="smoke">
+											<li></li>
+											<li></li>
+											<li></li>
+											<li></li>
+											<li></li>
+										</ul>
+										
+									</div>
+								
+								</div>
+								
+							</div>
+							
+							<div class="animated qoute delay-2 fadeIn">Thinking out side <span>the box</span> this world!</div>
+							
+						</div>
+						
+						<div class="col-2  animated slideInRight" id="movable">
+						
+							<div class="content">
+								
+								<h1>Justin Ventura</h1>
+								
+								<h2>Interactive Creative Designer</h2>
+								
+								<a href="#avatar" class="btn">Read More</a>
+								
+							</div>
+							
+						</div>
+					
+				</div>
+				
+			</div>
+			
+			<div class="starsWrap">	
+				<div class="starsA"></div>
+				<div class="starsB"></div>
+				<div class="starsC"></div>
+			</div>
+					
+		</section>
+		
+		<section id="avatar">
+		
+				<div class="wrap">
+				
+					<div class="row">
+						
+							<div class="col-2">
+							
+								<div class="content">
+									
+									<div class="title">Avatar <span>- About Me</span></div>
+									
+									<p>
+										Hi! I'm Justin (aka JRAYCV) a Filipino Interactive Creative Designer based in Amsterdam, 
+										The Netherlands. I love to explore and learn new things, That’s how I enhance my knowledge. 
+										<br><br>
+										My work experience focuses on converting the user to a subscriber by making a user engage,
+										interact and click that call to action through my creative design and development. 
+										<br><br>
+										I also like to design and develop innovative solutions to help people.
+									</p>
+									
+								<!--
+								<div class="download">
+										
+										<button class="btn animated" id="download">Download my CV</button>
+										
+										<div id="cv-download" class="animated">
+											<input type="email" placeholder="Please enter your email here..." name="cv_download" id="cv_download" />
+											<button id="submitDownload">Send</button> 
+											<div class="validation-msg"></div>
+										</div>
+										
+									</div>
+								-->
+									
+								</div>
+								
+							</div>
+							
+							<div class="col-2">
+							
+								<div class="content align-center">
+					
+									<img src="assets/img/avatar.svg" alt="avatar" id="animationB">				
+					
+									<div class="qoute">I go wherever my creativity takes me. <span>- Lil Wayne</span></div>
+									
+								</div>
+								
+							</div>
+						
+					</div>
+				
+					
+				</div>
+		
+		</section>
+			
+		<section id="ventures">
+			
+			<div class="wrap align-center">
+			
+			<div class="title">Ventures <span>- Personal Works</span></div>
+				
+			<div id="personalWorks"></div>
+					
+			<div class="qoute">It's not creative unless it sells! <span>- David Ogilvy</span></div>	
+			
+			</div>
+				
+		</section>
+		
+		<footer id="encounter">
+		
+				<div class="wrap">
+				
+							<div class="row">
+						
+							<div class="col-2">
+							
+								<div class="content">
+									
+									<div class="title">Encounter <span>- Contact Me</span></div>
+									
+									<img src="assets/img/dish.svg" alt="encounter" id="animationD">
+									
+									<div class="qoute">
+										I do love email. Wherever possible I try to communicate asynchronously. I'm really good at email.
+										<span>- Elon Musk</span>
+									</div>	
+									
+								</div>
+								
+							</div>
+							
+							<div class="col-2">
+							
+								<div class="content align-left">
+									
+									<div class="sub-title">I DO MY BEST TO RESPOND AS SOON AS POSSIBLE.</div>
+									
+									<div id="form">
+										
+										<label for="user_name">Your Name:</label>
+										
+										<input type="text" name="user_name" id="user_name">
+										
+										<label for="user_email">Your Email:</label>
+										
+										<input type="email" name="user_email" id="user_email">
+										
+										<label for="message">Message:</label>
+										
+										<textarea name="message" id="user_message"></textarea>
+										
+										<div class="validation-msg"></div>
+										
+										<button class="btn" id="submitForm">Send Message</button>
+									
+									</div>	
+
+									
+								</div>
+								
+							</div>
+						
+					</div>
+					
+					<div class="copyright">&copy; 2007 - <span id="currentYear">{Year}</span> 
+						By JRAYCV. All Rights Reserved.
+					</div>
+				
+				</div>				
+		
+		</footer>
+		
+	</div>
+
 </body>
+
+<script type="text/javascript" src="assets/js/scripts.js" defer></script>
 
 </html>
