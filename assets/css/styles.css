@@ -535,10 +535,82 @@ footer{
 	display: inline-block;
 }
 
+#man{
+	transform-box:fill-box;
+}
+
+#arm_fg{
+	animation: moveArm1 ease-in-out 3s infinite;
+}
+
+
+@keyframes moveArm1 {
+	
+	0%{
+		transform: rotate(2deg);
+	}
+
+	50%{
+		transform: rotate(-2deg);
+	}
+
+	100%{
+		transform: rotate(2deg);
+	}
+
+}
+
+#arm_bg{
+	animation: moveArm2 ease-in-out 3s infinite;
+}
+
+
+@keyframes moveArm2 {
+	
+	0%{
+		transform: rotate(-2deg);
+	}
+
+	50%{
+		transform: rotate(2deg);
+	}
+
+	100%{
+		transform: rotate(-2deg);
+	}
+
+}
+
 #animationD{
 	width:60%;
 	display: block;
 	margin:30px auto;
+}
+
+#disk{
+	transform-box:fill-box;
+}
+
+#head{
+	transform-origin: center;
+	animation: moveHead ease-in-out 3s infinite;
+}
+
+
+@keyframes moveHead {
+	
+	0%{
+		transform: rotate(2deg);
+	}
+
+	50%{
+		transform: rotate(-2deg);
+	}
+
+	100%{
+		transform: rotate(2deg);
+	}
+
 }
 
 .copyright{
